@@ -1,0 +1,54 @@
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Developer survey page" />
+    <meta name="author" content="Arup Deb" />
+    <meta name="viewport" content="width=device-width, initail-scale=1.0" />
+    <title>Developer Survey</title>
+    <link rel="stylesheet" href="./resources/css/index.css" />
+</head>
+
+<body>
+    <script type="text/javascript" src="resources/js/bundle.js"></script>
+    <main id="main">
+        <div class="container">
+            <header class="header">
+                <h1 id="title">Developer Survey Form</h1>
+                <p id="description">
+                    Thank you for taking time to participate in the Annual Developer
+                    Survey
+                </p>
+                <form id="survey-form">
+                    <div id="form-group">
+                        <label id="name-label" for="name">Name</label>
+                        <input id="name" class="form-control" type="text" placeholder="Enter your Name" required/>
+                    </div>
+                    <div id="form-group">
+                        <label id="email-label" for="email">Email</label>
+                        <input type="email" id="email" class="form-control" placeholder="Enter your Email" required/>
+                    </div>
+                    <div id="form-group">
+                        <label id="number-label" for="number">Experience</label><span>(optional)</span>
+                        <input id="number" type="number" class="form-control" min="0" max="90" placeholder="Enter your Experience in Coding">
+                    </div>
+                    <div id="form-group">
+                        <label id="dropdown-label" for="dropdown">Select which option best suit your current role</label>
+                        <select id="dropdown" name="role" class="form-control" required>
+                            <option disabled selected value>Select Current Role</option>
+                            <option value="Junior-Developer">Junior Developer</option>
+                            <option value="Software-Developer">Software Developer</option>
+                            <option value="Senior-Software-Developer">Senior Software Developer</option>
+                            <option value="Architect">Architect</option>
+                            <option value="Staff-Software-Engineer">Staff Software Engineer</option>
+                            <option value="Principal-Software-Engineer">Principal Software Engineer</option>
+                        </select>
+
+                    </div>
+                </form>
+            </header>
+        </div>
+    </main>
+</body>
+
+</html>
